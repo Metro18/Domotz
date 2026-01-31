@@ -1,0 +1,167 @@
+[
+  {
+    "name": "id",
+    "type": "number",
+    "label": "ID"
+  },
+  {
+    "name": "display_name",
+    "type": "text",
+    "label": "Display Name"
+  },
+  {
+    "name": "protocol",
+    "type": "text",
+    "label": "Protocol"
+  },
+  {
+    "name": "user_data",
+    "type": "collection",
+    "spec": [
+      {
+        "name": "name",
+        "type": "text"
+      }
+    ],
+    "label": "User Data"
+  },
+  {
+    "name": "first_seen_on",
+    "type": "text",
+    "label": "First Seen On"
+  },
+  {
+    "name": "importance",
+    "type": "text",
+    "label": "Importance"
+  },
+  {
+    "name": "type",
+    "type": "collection",
+    "spec": [
+      {
+        "name": "detected_id",
+        "type": "number"
+      },
+      {
+        "name": "id",
+        "type": "number"
+      },
+      {
+        "name": "label",
+        "type": "text"
+      }
+    ],
+    "label": "Type"
+  },
+  {
+    "name": "details",
+    "type": "collection",
+    "spec": [
+      {
+        "name": "zone",
+        "type": "text"
+      },
+      {
+        "name": "room",
+        "type": "text"
+      },
+      {
+        "name": "firmware_version",
+        "type": "text"
+      },
+      {
+        "name": "serial",
+        "type": "text"
+      },
+      {
+        "name": "snmp_read_community",
+        "type": "text"
+      },
+      {
+        "name": "snmp_write_community",
+        "type": "text"
+      }
+    ],
+    "label": "Details"
+  },
+  {
+    "name": "ip_addresses",
+    "type": "array",
+    "spec": {
+      "type": "text"
+    },
+    "label": "Ip Addresses"
+  },
+  {
+    "name": "last_status_change",
+    "type": "text",
+    "label": "Last Status Change"
+  },
+  {
+    "name": "status",
+    "type": "text",
+    "label": "Status"
+  },
+  {
+    "name": "vendor",
+    "type": "text",
+    "label": "Vendor"
+  },
+  {
+    "name": "grace_period",
+    "type": "number",
+    "label": "Grace Period"
+  },
+  {
+    "name": "agent_reachable",
+    "type": "boolean",
+    "label": "Agent Reachable"
+  },
+  {
+    "name": "open_ports",
+    "type": "collection",
+    "spec": [
+      {
+        "name": "tcp",
+        "type": "array",
+        "spec": {
+          "type": "number"
+        }
+      },
+      {
+        "name": "udp",
+        "type": "array",
+        "spec": {
+          "type": "number"
+        }
+      }
+    ],
+    "label": "Open Ports"
+  },
+  {
+    "name": "hw_address",
+    "type": "text",
+    "label": "Hw Address"
+  },
+  {
+    "name": "names",
+    "type": "collection",
+    "spec": [
+      {
+        "name": "host",
+        "type": "text"
+      },
+      {
+        "name": "snmp",
+        "type": "text"
+      }
+    ],
+    "label": "Names"
+  },
+  {
+    "name": "is_jammed",
+    "type": "boolean",
+    "label": "Is Jammed"
+  }
+]

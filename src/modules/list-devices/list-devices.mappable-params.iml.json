@@ -1,0 +1,15 @@
+// Defines "search" and "limit" as module input parameters.
+[
+	{
+		"name": "agent_id",                                                     // Makes value accesible via "{{parameters.search}}".
+		"type": "number",                                                       // Sets the type to text.
+		"label": "Agent ID",                                                    // Sets the user friendly label visible in the module
+		"help": "Agent ID"  // Sets the help text with an example under input field in the module.
+	},
+	{
+		"name": "show_hidden",
+		"type": "boolean",
+		"label": "Show Hidden",
+		"help": "Whether to include hidden devices in the returned list"
+	}
+]

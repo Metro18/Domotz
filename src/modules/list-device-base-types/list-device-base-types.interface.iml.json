@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "number",
+    "label": "ID"
+  },
+  {
+    "name": "identifier",
+    "type": "text",
+    "label": "Identifier"
+  },
+  {
+    "name": "label",
+    "type": "text",
+    "label": "Label"
+  },
+  {
+    "name": "vital",
+    "type": "boolean",
+    "label": "Vital"
+  }
+]

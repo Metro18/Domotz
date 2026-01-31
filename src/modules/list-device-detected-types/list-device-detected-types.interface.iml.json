@@ -1,0 +1,22 @@
+[
+  {
+    "name": "id",
+    "type": "number",
+    "label": "ID"
+  },
+  {
+    "name": "identifier",
+    "type": "text",
+    "label": "Identifier"
+  },
+  {
+    "name": "type_id",
+    "type": "number",
+    "label": "Type ID"
+  },
+  {
+    "name": "capabilities",
+    "type": "array",
+    "label": "Capabilities"
+  }
+]

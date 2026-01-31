@@ -1,0 +1,24 @@
+{
+	// Request
+	"url": "https://api-us-east-1-cell-1.domotz.com/public-api/v1/user",          // Absolute URL to the API endpoint which validates credentials
+	"headers": {                                          // Additional HTTP headers
+		"X-Api-Key": "{{parameters.apiKey}}"   // Authorizes user by API key, provided by user during the connection creation.
+	},
+
+	// Response handling
+	"response": {
+		"metadata": {                                     // Adds authorized user details to the connection label.
+			"type": "email",                              // Type of the parameter. Can be "text" or "email".
+			"value": "{{body.name}}"                     // The value in "email" will be displayed in connection's label.
+		},
+		"error": {                                        // Error handling
+			"message": "[{{statusCode}}] {{body.error}}"  // On error, returns error message as "[statusCode] error text".
+		}
+	},
+
+	"log": {
+		"sanitize": [                                     // Excludes sensitive parameters from logs.
+			"request.headers.X-Api-Key"               // Omit HTTP header "Authorization".
+		]
+	}
+}

@@ -1,0 +1,75 @@
+[
+  {
+    "name": "daily_limit",
+    "type": "number",
+    "label": "Daily Limit"
+  },
+  {
+    "name": "concurrent_allowed",
+    "type": "number",
+    "label": "Concurrent Allowed"
+  },
+  {
+    "name": "daily_usage",
+    "type": "number",
+    "label": "Daily Usage"
+  },
+  {
+    "name": "by_key",
+    "type": "array",
+    "spec": {
+      "type": "collection",
+      "spec": [
+        {
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "name": "count",
+          "type": "number"
+        },
+        {
+          "name": "id",
+          "type": "number"
+        }
+      ]
+    },
+    "label": "By Key"
+  },
+  {
+    "name": "by_ip",
+    "type": "array",
+    "spec": {
+      "type": "collection",
+      "spec": [
+        {
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "name": "count",
+          "type": "number"
+        }
+      ]
+    },
+    "label": "By Ip"
+  },
+  {
+    "name": "by_resource",
+    "type": "array",
+    "spec": {
+      "type": "collection",
+      "spec": [
+        {
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "name": "count",
+          "type": "number"
+        }
+      ]
+    },
+    "label": "By Resource"
+  }
+]

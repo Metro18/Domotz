@@ -1,0 +1,9 @@
+[
+	// Defines "agent_id" as mandatory module input parameter.
+	{
+		"name": "custom_driver_id",        // Makes value accesible via "{{parameters.id}}".
+		"type": "uinteger",  // Sets the type to unsigned integer.
+		"label": "Custom Driver ID",  // Sets the user friendly label visible in the module.
+		"required": true     // Sets the parameter as mandatory.
+	}
+]

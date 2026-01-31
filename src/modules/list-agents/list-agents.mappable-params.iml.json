@@ -1,0 +1,32 @@
+[
+	{
+		"name": "page_size",        // Makes value accesible via "{{parameters.page_size}}".
+		"type": "uinteger",  // Sets the type to unsigned integer.
+		"label": "Page Size",  // Sets the user friendly label visible in the module.
+		"help": "Min value is 1. Max value is 100. Default value is 10. BUT actually you can load more than 100.",
+		"required": false
+	},
+	{
+		"name": "page_number",        // Makes value accesible via "{{parameters.page_number}}".
+		"type": "uinteger",  // Sets the type to unsigned integer.
+		"label": "Page Number",  // Sets the user friendly label visible in the module.
+		"help": "Default value is 0",
+		"required": false
+	},
+	{
+		"name": "display_name",        // Makes value accesible via "{{parameters.display_name}}".
+		"type": "text",  // Sets the type to text.
+		"label": "Display Name",  // Sets the user friendly label visible in the module.
+		"help": "Consider only agents with display_name containing the string (case insensitive).",
+		"required": false
+	},
+	{
+		"name": "team_name",        // Makes value accesible via "{{parameters.team_name}}".
+		"type": "text",  // Sets the type to text.
+		"label": "Team Name",  // Sets the user friendly label visible in the module.
+		"help": "Filters by team name (companies only).",
+		"required": false,
+		"advanced": true
+	}
+
+]

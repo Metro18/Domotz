@@ -1,0 +1,29 @@
+[
+	{
+		"label": "Collectors",
+		"modules": [
+			"listAgents",
+			"getAgent"
+		]
+	},
+	{
+		"label": "Devices",
+		"modules": [
+			"listDevices",
+			"listDeviceBaseTypes",
+			"listDeviceDetectedTypes",
+			"getDevice",
+			"deleteDevice"
+		]
+	},
+	{
+		"label": "Other",
+		"modules": [
+			"apiUsageInfo",
+			"getUser",
+			"listCustomDrivers",
+			"getCustomDriver",
+			"createCustomDriverAssociation"
+		]
+	}
+]

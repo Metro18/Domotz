@@ -1,0 +1,15 @@
+{
+	// Request to API endpoint.
+	"url": "/type/device/base",                       // Relative to base URL
+	"method": "GET",
+	"headers": {
+		"X-Api-Key": "{{connection.apiKey}}"   // Authorizes user by API key, provided by user during the connection creation.
+	},                         // Additional HTTP headers
+	"qs": {                                // Query string
+	},
+
+	// Response handling
+	"response": {
+        "output": "{{body}}"
+	}
+}

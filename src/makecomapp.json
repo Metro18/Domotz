@@ -1,0 +1,284 @@
+{
+    "fileVersion": 1,
+    "generalCodeFiles": {
+        "base": "general/base.iml.json",
+        "common": "general/common.json",
+        "readme": "README.md",
+        "groups": "modules/groups.json"
+    },
+    "components": {
+        "connection": {
+            "connection1": {
+                "label": "Domotz",
+                "connectionType": "basic",
+                "codeFiles": {
+                    "communication": "connections/connection1/connection1.communication.iml.json",
+                    "params": "connections/connection1/connection1.params.iml.json",
+                    "common": "connections/connection1/connection1.common.json"
+                }
+            }
+        },
+        "module": {
+            "apiUsageInfo": {
+                "label": "API Usage Info",
+                "description": "Retrieves information about API usage and limits",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/api-usage-info/api-usage-info.communication.iml.json",
+                    "staticParams": "modules/api-usage-info/api-usage-info.static-params.iml.json",
+                    "mappableParams": "modules/api-usage-info/api-usage-info.mappable-params.iml.json",
+                    "interface": "modules/api-usage-info/api-usage-info.interface.iml.json",
+                    "samples": "modules/api-usage-info/api-usage-info.samples.iml.json",
+                    "scope": "modules/api-usage-info/api-usage-info.scope.iml.json"
+                }
+            },
+            "createCustomDriverAssociation": {
+                "label": "Custom Driver device binding​",
+                "description": "Apply a Custom Driver to a device.",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/create-custom-driver-association/create-custom-driver-association.communication.iml.json",
+                    "staticParams": "modules/create-custom-driver-association/create-custom-driver-association.static-params.iml.json",
+                    "mappableParams": "modules/create-custom-driver-association/create-custom-driver-association.mappable-params.iml.json",
+                    "interface": "modules/create-custom-driver-association/create-custom-driver-association.interface.iml.json",
+                    "samples": "modules/create-custom-driver-association/create-custom-driver-association.samples.iml.json",
+                    "scope": "modules/create-custom-driver-association/create-custom-driver-association.scope.iml.json"
+                }
+            },
+            "deleteDevice": {
+                "label": "Delete Device",
+                "description": "Deletes a device, whether ONLINE, OFFLINE or DOWN . If a device is deleted while online, it may reappear when rediscovered automatically.",
+                "moduleType": "action",
+                "actionCrud": "delete",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/delete-device/delete-device.communication.iml.json",
+                    "staticParams": "modules/delete-device/delete-device.static-params.iml.json",
+                    "mappableParams": "modules/delete-device/delete-device.mappable-params.iml.json",
+                    "interface": "modules/delete-device/delete-device.interface.iml.json",
+                    "samples": "modules/delete-device/delete-device.samples.iml.json",
+                    "scope": "modules/delete-device/delete-device.scope.iml.json"
+                }
+            },
+            "getAgent": {
+                "label": "Get Agent",
+                "description": "Returns the details of an agent",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/get-agent/get-agent.communication.iml.json",
+                    "staticParams": "modules/get-agent/get-agent.static-params.iml.json",
+                    "mappableParams": "modules/get-agent/get-agent.mappable-params.iml.json",
+                    "interface": "modules/get-agent/get-agent.interface.iml.json",
+                    "samples": "modules/get-agent/get-agent.samples.iml.json",
+                    "scope": "modules/get-agent/get-agent.scope.iml.json"
+                }
+            },
+            "getCustomDriver": {
+                "label": "Custom Driver details​",
+                "description": "Returns details of a Custom Driver.",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/get-custom-driver/get-custom-driver.communication.iml.json",
+                    "staticParams": "modules/get-custom-driver/get-custom-driver.static-params.iml.json",
+                    "mappableParams": "modules/get-custom-driver/get-custom-driver.mappable-params.iml.json",
+                    "interface": "modules/get-custom-driver/get-custom-driver.interface.iml.json",
+                    "samples": "modules/get-custom-driver/get-custom-driver.samples.iml.json",
+                    "scope": "modules/get-custom-driver/get-custom-driver.scope.iml.json"
+                }
+            },
+            "getDevice": {
+                "label": "Get Device",
+                "description": "Returns the details of a device",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/get-device/get-device.communication.iml.json",
+                    "staticParams": "modules/get-device/get-device.static-params.iml.json",
+                    "mappableParams": "modules/get-device/get-device.mappable-params.iml.json",
+                    "interface": "modules/get-device/get-device.interface.iml.json",
+                    "samples": "modules/get-device/get-device.samples.iml.json",
+                    "scope": "modules/get-device/get-device.scope.iml.json"
+                }
+            },
+            "getUser": {
+                "label": "Get User",
+                "description": "Returns the User information",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/get-user/get-user.communication.iml.json",
+                    "staticParams": "modules/get-user/get-user.static-params.iml.json",
+                    "mappableParams": "modules/get-user/get-user.mappable-params.iml.json",
+                    "interface": "modules/get-user/get-user.interface.iml.json",
+                    "samples": "modules/get-user/get-user.samples.iml.json",
+                    "scope": "modules/get-user/get-user.scope.iml.json"
+                }
+            },
+            "listAgents": {
+                "label": "List Agents",
+                "description": "Returns the agents list",
+                "moduleType": "search",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/list-agents/list-agents.communication.iml.json",
+                    "staticParams": "modules/list-agents/list-agents.static-params.iml.json",
+                    "mappableParams": "modules/list-agents/list-agents.mappable-params.iml.json",
+                    "interface": "modules/list-agents/list-agents.interface.iml.json",
+                    "samples": "modules/list-agents/list-agents.samples.iml.json",
+                    "scope": "modules/list-agents/list-agents.scope.iml.json"
+                }
+            },
+            "listCustomDrivers": {
+                "label": "Custom Drivers list​",
+                "description": "Retrieves the list of available Custom Drivers.",
+                "moduleType": "search",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/list-custom-drivers/list-custom-drivers.communication.iml.json",
+                    "staticParams": "modules/list-custom-drivers/list-custom-drivers.static-params.iml.json",
+                    "mappableParams": "modules/list-custom-drivers/list-custom-drivers.mappable-params.iml.json",
+                    "interface": "modules/list-custom-drivers/list-custom-drivers.interface.iml.json",
+                    "samples": "modules/list-custom-drivers/list-custom-drivers.samples.iml.json",
+                    "scope": "modules/list-custom-drivers/list-custom-drivers.scope.iml.json"
+                }
+            },
+            "listDeviceBaseTypes": {
+                "label": "List Device Types",
+                "description": "Returns the device types list",
+                "moduleType": "search",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/list-device-base-types/list-device-base-types.communication.iml.json",
+                    "staticParams": "modules/list-device-base-types/list-device-base-types.static-params.iml.json",
+                    "mappableParams": "modules/list-device-base-types/list-device-base-types.mappable-params.iml.json",
+                    "interface": "modules/list-device-base-types/list-device-base-types.interface.iml.json",
+                    "samples": "modules/list-device-base-types/list-device-base-types.samples.iml.json",
+                    "scope": "modules/list-device-base-types/list-device-base-types.scope.iml.json"
+                }
+            },
+            "listDeviceDetectedTypes": {
+                "label": "List Device Detected Types",
+                "description": "Returns the detected device types list",
+                "moduleType": "search",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/list-device-detected-types/list-device-detected-types.communication.iml.json",
+                    "staticParams": "modules/list-device-detected-types/list-device-detected-types.static-params.iml.json",
+                    "mappableParams": "modules/list-device-detected-types/list-device-detected-types.mappable-params.iml.json",
+                    "interface": "modules/list-device-detected-types/list-device-detected-types.interface.iml.json",
+                    "samples": "modules/list-device-detected-types/list-device-detected-types.samples.iml.json",
+                    "scope": "modules/list-device-detected-types/list-device-detected-types.scope.iml.json"
+                }
+            },
+            "listDevices": {
+                "label": "List Devices",
+                "description": "Returns all the devices of an agent",
+                "moduleType": "search",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/list-devices/list-devices.communication.iml.json",
+                    "staticParams": "modules/list-devices/list-devices.static-params.iml.json",
+                    "mappableParams": "modules/list-devices/list-devices.mappable-params.iml.json",
+                    "interface": "modules/list-devices/list-devices.interface.iml.json",
+                    "samples": "modules/list-devices/list-devices.samples.iml.json",
+                    "scope": "modules/list-devices/list-devices.scope.iml.json"
+                }
+            }
+        },
+        "function": {},
+        "rpc": {},
+        "webhook": {}
+    },
+    "origins": [
+        {
+            "label": "Origin",
+            "baseUrl": "https://us1.make.com/api",
+            "appId": "domotz-tnc01x",
+            "appVersion": 1,
+            "idMapping": {
+                "connection": [
+                    {
+                        "local": "connection1",
+                        "remote": "domotz-tnc01x"
+                    }
+                ],
+                "module": [
+                    {
+                        "local": "apiUsageInfo",
+                        "remote": "apiUsageInfo"
+                    },
+                    {
+                        "local": "createCustomDriverAssociation",
+                        "remote": "createCustomDriverAssociation"
+                    },
+                    {
+                        "local": "deleteDevice",
+                        "remote": "deleteDevice"
+                    },
+                    {
+                        "local": "getAgent",
+                        "remote": "getAgent"
+                    },
+                    {
+                        "local": "getCustomDriver",
+                        "remote": "getCustomDriver"
+                    },
+                    {
+                        "local": "getDevice",
+                        "remote": "getDevice"
+                    },
+                    {
+                        "local": "getUser",
+                        "remote": "getUser"
+                    },
+                    {
+                        "local": "listAgents",
+                        "remote": "listAgents"
+                    },
+                    {
+                        "local": "listCustomDrivers",
+                        "remote": "listCustomDrivers"
+                    },
+                    {
+                        "local": "listDeviceBaseTypes",
+                        "remote": "listDeviceBaseTypes"
+                    },
+                    {
+                        "local": "listDeviceDetectedTypes",
+                        "remote": "listDeviceDetectedTypes"
+                    },
+                    {
+                        "local": "listDevices",
+                        "remote": "listDevices"
+                    }
+                ],
+                "function": [],
+                "rpc": [],
+                "webhook": []
+            },
+            "apikeyFile": "../.secrets/apikey"
+        }
+    ]
+}

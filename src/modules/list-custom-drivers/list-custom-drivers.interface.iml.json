@@ -1,0 +1,79 @@
+[
+  {
+    "name": "id",
+    "type": "number",
+    "label": "ID"
+  },
+  {
+    "name": "name",
+    "type": "text",
+    "label": "Name"
+  },
+  {
+    "name": "type",
+    "type": "text",
+    "label": "Type"
+  },
+  {
+    "name": "description",
+    "type": "text",
+    "label": "Description"
+  },
+  {
+    "name": "minimal_sample_period",
+    "type": "number",
+    "label": "Minimal sample period"
+  },
+  {
+    "name": "is_valid",
+    "type": "boolean",
+    "label": "Is valid"
+  },
+  {
+    "name": "requires_credentials",
+    "type": "boolean",
+    "label": "Requires credentials"
+  },
+  {
+    "name": "code_inspection",
+    "type": "collection",
+    "spec": [
+      {
+        "name": "has_independent_variables",
+        "type": "boolean",
+        "label": "Has independent variables"
+      },
+      {
+        "name": "has_table",
+        "type": "boolean",
+        "label": "Has table"
+      },
+      {
+        "name": "has_parameters",
+        "type": "boolean",
+        "label": "Has parameters"
+      },
+      {
+        "name": "data_saving_functions",
+        "type": "array",
+        "label": "Data saving functions"
+      }
+    ],
+    "label": "Code inspection"
+  },
+  {
+    "name": "device_ids",
+    "type": "array",
+    "label": "Device ids"
+  },
+  {
+    "name": "__IMTLENGTH__",
+    "type": "number",
+    "label": "  imtlength  "
+  },
+  {
+    "name": "__IMTINDEX__",
+    "type": "number",
+    "label": "  imtindex  "
+  }
+]

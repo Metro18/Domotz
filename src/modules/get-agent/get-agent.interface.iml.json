@@ -1,0 +1,120 @@
+[
+  {
+    "name": "id",
+    "type": "number",
+    "label": "ID"
+  },
+  {
+    "name": "display_name",
+    "type": "text",
+    "label": "Display Name"
+  },
+  {
+    "name": "access_right",
+    "type": "collection",
+    "spec": [
+      {
+        "name": "status",
+        "type": "text"
+      },
+      {
+        "name": "granting_user",
+        "type": "collection",
+        "spec": [
+          {
+            "name": "name",
+            "type": "text"
+          }
+        ]
+      }
+    ],
+    "label": "Access Right"
+  },
+  {
+    "name": "creation_time",
+    "type": "text",
+    "label": "Creation Time"
+  },
+  {
+    "name": "status",
+    "type": "collection",
+    "spec": [
+      {
+        "name": "value",
+        "type": "text"
+      },
+      {
+        "name": "last_change",
+        "type": "text"
+      }
+    ],
+    "label": "Status"
+  },
+  {
+    "name": "licence",
+    "type": "collection",
+    "spec": [
+      {
+        "name": "id",
+        "type": "number"
+      },
+      {
+        "name": "code",
+        "type": "text"
+      },
+      {
+        "name": "bound_mac_address",
+        "type": "text"
+      },
+      {
+        "name": "activation_time",
+        "type": "text"
+      },
+      {
+        "name": "type",
+        "type": "text"
+      }
+    ],
+    "label": "Licence"
+  },
+  {
+    "name": "timezone",
+    "type": "text",
+    "label": "Timezone"
+  },
+  {
+    "name": "version",
+    "type": "collection",
+    "spec": [
+      {
+        "name": "agent",
+        "type": "text"
+      },
+      {
+        "name": "package",
+        "type": "text"
+      }
+    ],
+    "label": "Version"
+  },
+  {
+    "name": "location",
+    "type": "collection",
+    "spec": [
+      {
+        "name": "latitude",
+        "type": "text"
+      },
+      {
+        "name": "longitude",
+        "type": "text"
+      }
+    ],
+    "label": "Location"
+  },
+  {
+    "name": "listen_on",
+    "type": "text",
+    "label": "Listen On"
+  }
+]

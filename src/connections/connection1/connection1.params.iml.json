@@ -1,0 +1,8 @@
+[
+    {
+        "name": "apiKey",
+        "type": "text",
+        "label": "Please provide API Key",
+        "required": true
+    }
+]

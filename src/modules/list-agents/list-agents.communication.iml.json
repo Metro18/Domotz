@@ -1,0 +1,19 @@
+{
+	// Request to API endpoint with parameter "id" defined in Mappable parameters.
+	"url": "/agent",      // Relative to base URL
+	"method": "GET",
+	"headers": {
+		"X-Api-Key": "{{connection.apiKey}}"   // Authorizes user by API key, provided by user during the connection creation.
+		},    // Additional HTTP headers
+	"qs": {
+		"page_size": "{{parameters.page_size}}",  // Parameter "page_size" that is defined in Mappable parameters.
+		"page_number": "{{parameters.page_number}}",  // Parameter "page_number" that is defined in Mappable parameters.
+		"display_name": "{{parameters.display_name}}",  // Parameter "display_name" that is defined in Mappable parameters.
+		"team_name": "{{parameters.team_name}}"  // Parameter "team_name" that is defined in Mappable parameters.
+	}, // Query string
+
+	// Response handling
+	"response": {
+        "output": "{{body}}"
+	}
+}
