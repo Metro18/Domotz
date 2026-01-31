@@ -1,0 +1,18 @@
+{
+	"url": "/agent/{{parameters.agent_id}}/device/variable",
+	"method": "HEAD",
+	"headers": {
+		"X-Api-Key": "{{connection.apiKey}}"
+	},
+	"qs": {
+		"value": "{{parameters.value}}",
+		"path": "{{parameters.path}}",
+		"has_history": "{{parameters.has_history}}",
+		"metric": "{{parameters.metric}}"
+	},
+	"response": {
+		"output": {
+			"count": "{{headers.\"X-Entities-Count\"}}"
+		}
+	}
+}

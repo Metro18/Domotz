@@ -18,6 +18,26 @@
         ]
     },
     {
+        "label": "Metrics",
+        "modules": [
+            "getDeviceStatusHistory",
+            "getDeviceRTDHistory",
+            "getDeviceUptime",
+            "listDeviceVariables",
+            "countDeviceVariables",
+            "getVariableHistory",
+            "getAgentRTDStats",
+            "listAgentDeviceVariables",
+            "countAgentDeviceVariables",
+            "getSpeedTestHistory",
+            "getAgentUptime",
+            "listAgentVariables",
+            "countAgentVariables",
+            "getAgentVariableHistory",
+            "getAgentListUptime"
+        ]
+    },
+    {
         "label": "Other",
         "modules": [
             "apiUsageInfo",

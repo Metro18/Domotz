@@ -1,0 +1,14 @@
+{
+	"url": "/agent/uptime",
+	"method": "GET",
+	"headers": {
+		"X-Api-Key": "{{connection.apiKey}}"
+	},
+	"qs": {
+		"from": "{{parameters.from}}",
+		"to": "{{parameters.to}}"
+	},
+	"response": {
+		"output": "{{body}}"
+	}
+}

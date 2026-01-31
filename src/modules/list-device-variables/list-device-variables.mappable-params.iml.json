@@ -1,0 +1,76 @@
+[
+	{
+		"name": "agent_id",
+		"type": "uinteger",
+		"label": "Collector ID",
+		"required": true
+	},
+	{
+		"name": "device_id",
+		"type": "uinteger",
+		"label": "Device ID",
+		"required": true
+	},
+	{
+		"name": "page_size",
+		"type": "uinteger",
+		"label": "Page Size",
+		"help": "The maximum number of items to return. Min value is 1. Max value is 1000. Default value is 100",
+		"required": false
+	},
+	{
+		"name": "page_number",
+		"type": "uinteger",
+		"label": "Page Number",
+		"help": "The requested page number, 0-indexed. Default value is 0",
+		"required": false
+	},
+	{
+		"name": "value",
+		"type": "text",
+		"label": "Value",
+		"help": "Allows filtering by value",
+		"required": false,
+		"advanced": true
+	},
+	{
+		"name": "path",
+		"type": "text",
+		"label": "Path",
+		"help": "Allows filtering by path",
+		"required": false,
+		"advanced": true
+	},
+	{
+		"name": "sort_by",
+		"type": "text",
+		"label": "Sort By",
+		"help": "Allows ordering by path, id, value, label, value_update_time, creation_time",
+		"required": false,
+		"advanced": true
+	},
+	{
+		"name": "sorting_direction",
+		"type": "text",
+		"label": "Sorting Direction",
+		"help": "The default is asc",
+		"required": false,
+		"advanced": true
+	},
+	{
+		"name": "has_history",
+		"type": "boolean",
+		"label": "Has History",
+		"help": "Allows filtering by has_history field",
+		"required": false,
+		"advanced": true
+	},
+	{
+		"name": "metric",
+		"type": "text",
+		"label": "Metric",
+		"help": "Allows filtering by metric",
+		"required": false,
+		"advanced": true
+	}
+]

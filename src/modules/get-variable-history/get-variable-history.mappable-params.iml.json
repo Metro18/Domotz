@@ -1,0 +1,36 @@
+[
+	{
+		"name": "agent_id",
+		"type": "uinteger",
+		"label": "Collector ID",
+		"required": true
+	},
+	{
+		"name": "device_id",
+		"type": "uinteger",
+		"label": "Device ID",
+		"required": true
+	},
+	{
+		"name": "variable_id",
+		"type": "uinteger",
+		"label": "Variable ID",
+		"required": true
+	},
+	{
+		"name": "from",
+		"type": "date",
+		"label": "From",
+		"help": "The start time of the time series. Default value is one week",
+		"required": false,
+		"advanced": true
+	},
+	{
+		"name": "to",
+		"type": "date",
+		"label": "To",
+		"help": "The end time of the time series. Default value is now",
+		"required": false,
+		"advanced": true
+	}
+]

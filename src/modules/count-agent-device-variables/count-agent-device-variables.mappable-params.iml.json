@@ -1,0 +1,40 @@
+[
+	{
+		"name": "agent_id",
+		"type": "uinteger",
+		"label": "Collector ID",
+		"required": true
+	},
+	{
+		"name": "value",
+		"type": "text",
+		"label": "Value",
+		"help": "Allows filtering by value",
+		"required": false,
+		"advanced": true
+	},
+	{
+		"name": "path",
+		"type": "text",
+		"label": "Path",
+		"help": "Allows filtering by path",
+		"required": false,
+		"advanced": true
+	},
+	{
+		"name": "has_history",
+		"type": "boolean",
+		"label": "Has History",
+		"help": "Allows filtering by has_history field",
+		"required": false,
+		"advanced": true
+	},
+	{
+		"name": "metric",
+		"type": "text",
+		"label": "Metric",
+		"help": "Allows filtering by metric",
+		"required": false,
+		"advanced": true
+	}
+]

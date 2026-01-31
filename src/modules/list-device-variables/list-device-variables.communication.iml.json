@@ -1,0 +1,20 @@
+{
+	"url": "/agent/{{parameters.agent_id}}/device/{{parameters.device_id}}/variable",
+	"method": "GET",
+	"headers": {
+		"X-Api-Key": "{{connection.apiKey}}"
+	},
+	"qs": {
+		"page_size": "{{parameters.page_size}}",
+		"page_number": "{{parameters.page_number}}",
+		"value": "{{parameters.value}}",
+		"path": "{{parameters.path}}",
+		"sort_by": "{{parameters.sort_by}}",
+		"sorting_direction": "{{parameters.sorting_direction}}",
+		"has_history": "{{parameters.has_history}}",
+		"metric": "{{parameters.metric}}"
+	},
+	"response": {
+		"output": "{{body}}"
+	}
+}

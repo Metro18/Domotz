@@ -237,6 +237,243 @@
                     "samples": "modules/list-devices/list-devices.samples.iml.json",
                     "scope": "modules/list-devices/list-devices.scope.iml.json"
                 }
+            },
+            "getDeviceStatusHistory": {
+                "label": "Device state change history",
+                "description": "Returns the time series of the state changes of the device",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/get-device-status-history/get-device-status-history.communication.iml.json",
+                    "staticParams": "modules/get-device-status-history/get-device-status-history.static-params.iml.json",
+                    "mappableParams": "modules/get-device-status-history/get-device-status-history.mappable-params.iml.json",
+                    "interface": "modules/get-device-status-history/get-device-status-history.interface.iml.json",
+                    "samples": "modules/get-device-status-history/get-device-status-history.samples.iml.json",
+                    "scope": "modules/get-device-status-history/get-device-status-history.scope.iml.json"
+                }
+            },
+            "getDeviceRTDHistory": {
+                "label": "Round Trip Delay statistics history",
+                "description": "Returns the Round Trip Delay history for the device",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/get-device-rtd-history/get-device-rtd-history.communication.iml.json",
+                    "staticParams": "modules/get-device-rtd-history/get-device-rtd-history.static-params.iml.json",
+                    "mappableParams": "modules/get-device-rtd-history/get-device-rtd-history.mappable-params.iml.json",
+                    "interface": "modules/get-device-rtd-history/get-device-rtd-history.interface.iml.json",
+                    "samples": "modules/get-device-rtd-history/get-device-rtd-history.samples.iml.json",
+                    "scope": "modules/get-device-rtd-history/get-device-rtd-history.scope.iml.json"
+                }
+            },
+            "getDeviceUptime": {
+                "label": "Device uptime",
+                "description": "Returns the uptime of the device",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/get-device-uptime/get-device-uptime.communication.iml.json",
+                    "staticParams": "modules/get-device-uptime/get-device-uptime.static-params.iml.json",
+                    "mappableParams": "modules/get-device-uptime/get-device-uptime.mappable-params.iml.json",
+                    "interface": "modules/get-device-uptime/get-device-uptime.interface.iml.json",
+                    "samples": "modules/get-device-uptime/get-device-uptime.samples.iml.json",
+                    "scope": "modules/get-device-uptime/get-device-uptime.scope.iml.json"
+                }
+            },
+            "listDeviceVariables": {
+                "label": "Device variables list",
+                "description": "Returns the list of device variables",
+                "moduleType": "search",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/list-device-variables/list-device-variables.communication.iml.json",
+                    "staticParams": "modules/list-device-variables/list-device-variables.static-params.iml.json",
+                    "mappableParams": "modules/list-device-variables/list-device-variables.mappable-params.iml.json",
+                    "interface": "modules/list-device-variables/list-device-variables.interface.iml.json",
+                    "samples": "modules/list-device-variables/list-device-variables.samples.iml.json",
+                    "scope": "modules/list-device-variables/list-device-variables.scope.iml.json"
+                }
+            },
+            "countDeviceVariables": {
+                "label": "Device variables count",
+                "description": "Returns device variables count",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/count-device-variables/count-device-variables.communication.iml.json",
+                    "staticParams": "modules/count-device-variables/count-device-variables.static-params.iml.json",
+                    "mappableParams": "modules/count-device-variables/count-device-variables.mappable-params.iml.json",
+                    "interface": "modules/count-device-variables/count-device-variables.interface.iml.json",
+                    "samples": "modules/count-device-variables/count-device-variables.samples.iml.json",
+                    "scope": "modules/count-device-variables/count-device-variables.scope.iml.json"
+                }
+            },
+            "getVariableHistory": {
+                "label": "Device variable history",
+                "description": "Returns the device variable history",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/get-variable-history/get-variable-history.communication.iml.json",
+                    "staticParams": "modules/get-variable-history/get-variable-history.static-params.iml.json",
+                    "mappableParams": "modules/get-variable-history/get-variable-history.mappable-params.iml.json",
+                    "interface": "modules/get-variable-history/get-variable-history.interface.iml.json",
+                    "samples": "modules/get-variable-history/get-variable-history.samples.iml.json",
+                    "scope": "modules/get-variable-history/get-variable-history.scope.iml.json"
+                }
+            },
+            "getAgentRTDStats": {
+                "label": "Round Trip Delay statistics",
+                "description": "Returns the Round Trip Delay statistics for all devices monitored by the collector",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/get-agent-rtd-stats/get-agent-rtd-stats.communication.iml.json",
+                    "staticParams": "modules/get-agent-rtd-stats/get-agent-rtd-stats.static-params.iml.json",
+                    "mappableParams": "modules/get-agent-rtd-stats/get-agent-rtd-stats.mappable-params.iml.json",
+                    "interface": "modules/get-agent-rtd-stats/get-agent-rtd-stats.interface.iml.json",
+                    "samples": "modules/get-agent-rtd-stats/get-agent-rtd-stats.samples.iml.json",
+                    "scope": "modules/get-agent-rtd-stats/get-agent-rtd-stats.scope.iml.json"
+                }
+            },
+            "listAgentDeviceVariables": {
+                "label": "Collector device variables list",
+                "description": "Returns the list of all device variables of the collector",
+                "moduleType": "search",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/list-agent-device-variables/list-agent-device-variables.communication.iml.json",
+                    "staticParams": "modules/list-agent-device-variables/list-agent-device-variables.static-params.iml.json",
+                    "mappableParams": "modules/list-agent-device-variables/list-agent-device-variables.mappable-params.iml.json",
+                    "interface": "modules/list-agent-device-variables/list-agent-device-variables.interface.iml.json",
+                    "samples": "modules/list-agent-device-variables/list-agent-device-variables.samples.iml.json",
+                    "scope": "modules/list-agent-device-variables/list-agent-device-variables.scope.iml.json"
+                }
+            },
+            "countAgentDeviceVariables": {
+                "label": "Collector device variables count",
+                "description": "Returns the device variables count of the collector",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/count-agent-device-variables/count-agent-device-variables.communication.iml.json",
+                    "staticParams": "modules/count-agent-device-variables/count-agent-device-variables.static-params.iml.json",
+                    "mappableParams": "modules/count-agent-device-variables/count-agent-device-variables.mappable-params.iml.json",
+                    "interface": "modules/count-agent-device-variables/count-agent-device-variables.interface.iml.json",
+                    "samples": "modules/count-agent-device-variables/count-agent-device-variables.samples.iml.json",
+                    "scope": "modules/count-agent-device-variables/count-agent-device-variables.scope.iml.json"
+                }
+            },
+            "getSpeedTestHistory": {
+                "label": "Internet Speed Test time series",
+                "description": "Returns the time series of the Internet Speed measurements taken from the collector",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/get-speed-test-history/get-speed-test-history.communication.iml.json",
+                    "staticParams": "modules/get-speed-test-history/get-speed-test-history.static-params.iml.json",
+                    "mappableParams": "modules/get-speed-test-history/get-speed-test-history.mappable-params.iml.json",
+                    "interface": "modules/get-speed-test-history/get-speed-test-history.interface.iml.json",
+                    "samples": "modules/get-speed-test-history/get-speed-test-history.samples.iml.json",
+                    "scope": "modules/get-speed-test-history/get-speed-test-history.scope.iml.json"
+                }
+            },
+            "getAgentUptime": {
+                "label": "Collector uptime",
+                "description": "Returns the uptime of the collector",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/get-agent-uptime/get-agent-uptime.communication.iml.json",
+                    "staticParams": "modules/get-agent-uptime/get-agent-uptime.static-params.iml.json",
+                    "mappableParams": "modules/get-agent-uptime/get-agent-uptime.mappable-params.iml.json",
+                    "interface": "modules/get-agent-uptime/get-agent-uptime.interface.iml.json",
+                    "samples": "modules/get-agent-uptime/get-agent-uptime.samples.iml.json",
+                    "scope": "modules/get-agent-uptime/get-agent-uptime.scope.iml.json"
+                }
+            },
+            "listAgentVariables": {
+                "label": "Collector variables list",
+                "description": "Returns the list of all collector variables of the collector",
+                "moduleType": "search",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/list-agent-variables/list-agent-variables.communication.iml.json",
+                    "staticParams": "modules/list-agent-variables/list-agent-variables.static-params.iml.json",
+                    "mappableParams": "modules/list-agent-variables/list-agent-variables.mappable-params.iml.json",
+                    "interface": "modules/list-agent-variables/list-agent-variables.interface.iml.json",
+                    "samples": "modules/list-agent-variables/list-agent-variables.samples.iml.json",
+                    "scope": "modules/list-agent-variables/list-agent-variables.scope.iml.json"
+                }
+            },
+            "countAgentVariables": {
+                "label": "Collector variables count",
+                "description": "Returns the collector variables count of the collector",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/count-agent-variables/count-agent-variables.communication.iml.json",
+                    "staticParams": "modules/count-agent-variables/count-agent-variables.static-params.iml.json",
+                    "mappableParams": "modules/count-agent-variables/count-agent-variables.mappable-params.iml.json",
+                    "interface": "modules/count-agent-variables/count-agent-variables.interface.iml.json",
+                    "samples": "modules/count-agent-variables/count-agent-variables.samples.iml.json",
+                    "scope": "modules/count-agent-variables/count-agent-variables.scope.iml.json"
+                }
+            },
+            "getAgentVariableHistory": {
+                "label": "Collector variable history",
+                "description": "Returns the collector variable history",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/get-agent-variable-history/get-agent-variable-history.communication.iml.json",
+                    "staticParams": "modules/get-agent-variable-history/get-agent-variable-history.static-params.iml.json",
+                    "mappableParams": "modules/get-agent-variable-history/get-agent-variable-history.mappable-params.iml.json",
+                    "interface": "modules/get-agent-variable-history/get-agent-variable-history.interface.iml.json",
+                    "samples": "modules/get-agent-variable-history/get-agent-variable-history.samples.iml.json",
+                    "scope": "modules/get-agent-variable-history/get-agent-variable-history.scope.iml.json"
+                }
+            },
+            "getAgentListUptime": {
+                "label": "All collectors uptime",
+                "description": "Returns the uptime of all collectors",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/get-agent-list-uptime/get-agent-list-uptime.communication.iml.json",
+                    "staticParams": "modules/get-agent-list-uptime/get-agent-list-uptime.static-params.iml.json",
+                    "mappableParams": "modules/get-agent-list-uptime/get-agent-list-uptime.mappable-params.iml.json",
+                    "interface": "modules/get-agent-list-uptime/get-agent-list-uptime.interface.iml.json",
+                    "samples": "modules/get-agent-list-uptime/get-agent-list-uptime.samples.iml.json",
+                    "scope": "modules/get-agent-list-uptime/get-agent-list-uptime.scope.iml.json"
+                }
             }
         },
         "function": {},
@@ -312,6 +549,66 @@
                     {
                         "local": "listDevices",
                         "remote": "listDevices"
+                    },
+                    {
+                        "local": "getDeviceStatusHistory",
+                        "remote": "getDeviceStatusHistory"
+                    },
+                    {
+                        "local": "getDeviceRTDHistory",
+                        "remote": "getDeviceRTDHistory"
+                    },
+                    {
+                        "local": "getDeviceUptime",
+                        "remote": "getDeviceUptime"
+                    },
+                    {
+                        "local": "listDeviceVariables",
+                        "remote": "listDeviceVariables"
+                    },
+                    {
+                        "local": "countDeviceVariables",
+                        "remote": "countDeviceVariables"
+                    },
+                    {
+                        "local": "getVariableHistory",
+                        "remote": "getVariableHistory"
+                    },
+                    {
+                        "local": "getAgentRTDStats",
+                        "remote": "getAgentRTDStats"
+                    },
+                    {
+                        "local": "listAgentDeviceVariables",
+                        "remote": "listAgentDeviceVariables"
+                    },
+                    {
+                        "local": "countAgentDeviceVariables",
+                        "remote": "countAgentDeviceVariables"
+                    },
+                    {
+                        "local": "getSpeedTestHistory",
+                        "remote": "getSpeedTestHistory"
+                    },
+                    {
+                        "local": "getAgentUptime",
+                        "remote": "getAgentUptime"
+                    },
+                    {
+                        "local": "listAgentVariables",
+                        "remote": "listAgentVariables"
+                    },
+                    {
+                        "local": "countAgentVariables",
+                        "remote": "countAgentVariables"
+                    },
+                    {
+                        "local": "getAgentVariableHistory",
+                        "remote": "getAgentVariableHistory"
+                    },
+                    {
+                        "local": "getAgentListUptime",
+                        "remote": "getAgentListUptime"
                     }
                 ],
                 "function": [],
