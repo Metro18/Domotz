@@ -3,7 +3,7 @@
 	{
 		"name": "agent_id",        // Makes value accesible via "{{parameters.agent_id}}".
 		"type": "uinteger",  // Set the type to unsigned integer.
-		"label": "Agent ID",  // Sets the user friendly label visible in the module.
+		"label": "Collector ID",  // Sets the user friendly label visible in the module.
 		"required": true     // Sets the parameter as mandatory.
 	},
 	{

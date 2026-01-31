@@ -68,8 +68,8 @@
                 }
             },
             "getAgent": {
-                "label": "Get Agent",
-                "description": "Returns the details of an agent",
+                "label": "Get Collector",
+                "description": "Returns the details of a collector",
                 "moduleType": "action",
                 "actionCrud": "read",
                 "connection": "connection1",
@@ -131,9 +131,25 @@
                     "scope": "modules/get-user/get-user.scope.iml.json"
                 }
             },
+            "countAgents": {
+                "label": "Collectors count",
+                "description": "Counts the collectors",
+                "moduleType": "action",
+                "actionCrud": "read",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/count-agents/count-agents.communication.iml.json",
+                    "staticParams": "modules/count-agents/count-agents.static-params.iml.json",
+                    "mappableParams": "modules/count-agents/count-agents.mappable-params.iml.json",
+                    "interface": "modules/count-agents/count-agents.interface.iml.json",
+                    "samples": "modules/count-agents/count-agents.samples.iml.json",
+                    "scope": "modules/count-agents/count-agents.scope.iml.json"
+                }
+            },
             "listAgents": {
-                "label": "List Agents",
-                "description": "Returns the agents list",
+                "label": "List Collectors",
+                "description": "Returns the collectors list",
                 "moduleType": "search",
                 "connection": "connection1",
                 "altConnection": null,
@@ -193,7 +209,7 @@
             },
             "listDevices": {
                 "label": "List Devices",
-                "description": "Returns all the devices of an agent",
+                "description": "Returns all the devices of a collector",
                 "moduleType": "search",
                 "connection": "connection1",
                 "altConnection": null,
@@ -252,6 +268,10 @@
                     {
                         "local": "getUser",
                         "remote": "getUser"
+                    },
+                    {
+                        "local": "countAgents",
+                        "remote": "countAgents"
                     },
                     {
                         "local": "listAgents",

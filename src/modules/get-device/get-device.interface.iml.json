@@ -116,7 +116,7 @@
   {
     "name": "agent_reachable",
     "type": "boolean",
-    "label": "Agent Reachable"
+    "label": "Collector Reachable"
   },
   {
     "name": "open_ports",

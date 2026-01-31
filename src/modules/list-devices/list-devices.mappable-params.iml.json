@@ -3,8 +3,8 @@
 	{
 		"name": "agent_id",                                                     // Makes value accesible via "{{parameters.search}}".
 		"type": "number",                                                       // Sets the type to text.
-		"label": "Agent ID",                                                    // Sets the user friendly label visible in the module
-		"help": "Agent ID"  // Sets the help text with an example under input field in the module.
+		"label": "Collector ID",                                                    // Sets the user friendly label visible in the module
+		"help": "Collector ID"  // Sets the help text with an example under input field in the module.
 	},
 	{
 		"name": "show_hidden",
