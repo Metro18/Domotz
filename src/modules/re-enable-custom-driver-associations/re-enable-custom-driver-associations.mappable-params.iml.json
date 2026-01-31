@@ -1,0 +1,10 @@
+[
+	{
+		"name": "include_unrecoverable",
+		"type": "boolean",
+		"label": "Include Unrecoverable",
+		"help": "If true, will also re-enable associations that the system has determined unable to recover (e.g. due to missing credentials). Defaults to false.",
+		"required": false,
+		"advanced": true
+	}
+]

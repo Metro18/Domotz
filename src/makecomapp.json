@@ -51,6 +51,22 @@
                     "scope": "modules/create-custom-driver-association/create-custom-driver-association.scope.iml.json"
                 }
             },
+            "reEnableCustomDriverAssociations": {
+                "label": "Disabled Custom Drivers reactivation",
+                "description": "Re-enable all disabled Custom Drivers for the current user",
+                "moduleType": "action",
+                "actionCrud": "update",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/re-enable-custom-driver-associations/re-enable-custom-driver-associations.communication.iml.json",
+                    "staticParams": "modules/re-enable-custom-driver-associations/re-enable-custom-driver-associations.static-params.iml.json",
+                    "mappableParams": "modules/re-enable-custom-driver-associations/re-enable-custom-driver-associations.mappable-params.iml.json",
+                    "interface": "modules/re-enable-custom-driver-associations/re-enable-custom-driver-associations.interface.iml.json",
+                    "samples": "modules/re-enable-custom-driver-associations/re-enable-custom-driver-associations.samples.iml.json",
+                    "scope": "modules/re-enable-custom-driver-associations/re-enable-custom-driver-associations.scope.iml.json"
+                }
+            },
             "deleteDevice": {
                 "label": "Delete Device",
                 "description": "Deletes a device, whether ONLINE, OFFLINE or DOWN . If a device is deleted while online, it may reappear when rediscovered automatically.",
@@ -248,6 +264,10 @@
                     {
                         "local": "createCustomDriverAssociation",
                         "remote": "createCustomDriverAssociation"
+                    },
+                    {
+                        "local": "reEnableCustomDriverAssociations",
+                        "remote": "reEnableCustomDriverAssociations"
                     },
                     {
                         "local": "deleteDevice",
