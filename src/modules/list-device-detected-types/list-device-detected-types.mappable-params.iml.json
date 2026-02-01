@@ -1,2 +1,10 @@
 [
+	{
+		"name": "limit",
+		"type": "uinteger",
+		"label": "Maximum number of records",
+		"help": "The maximum number of items to return. Default is 100.",
+		"default": 100,
+		"required": true
+	}
 ]

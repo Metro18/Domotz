@@ -5,8 +5,8 @@
 		"X-Api-Key": "{{connection.apiKey}}"
 	},
 	"qs": {
-		"page_size": "{{parameters.page_size}}",
-		"page_number": "{{parameters.page_number}}",
+		"page_size": "{{min(1000, parameters.limit)}}",
+		"page_number": "{{pagination.page - 1}}",
 		"value": "{{parameters.value}}",
 		"path": "{{parameters.path}}",
 		"sort_by": "{{parameters.sort_by}}",
@@ -15,6 +15,14 @@
 		"metric": "{{parameters.metric}}"
 	},
 	"response": {
-		"output": "{{body}}"
+		"limit": "{{parameters.limit}}",
+		"iterate": "{{body}}",
+		"output": "{{item}}"
+	},
+	"pagination": {
+		"qs": {
+			"page_number": "{{pagination.page - 1}}"
+		},
+		"condition": "{{length(body) > 0}}"
 	}
 }

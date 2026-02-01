@@ -1,17 +1,11 @@
 [
 	{
-		"name": "page_size",        // Makes value accesible via "{{parameters.page_size}}".
-		"type": "uinteger",  // Sets the type to unsigned integer.
-		"label": "Page Size",  // Sets the user friendly label visible in the module.
-		"help": "Min value is 1. Max value is 100. Default value is 10. BUT actually you can load more than 100.",
-		"required": false
-	},
-	{
-		"name": "page_number",        // Makes value accesible via "{{parameters.page_number}}".
-		"type": "uinteger",  // Sets the type to unsigned integer.
-		"label": "Page Number",  // Sets the user friendly label visible in the module.
-		"help": "Default value is 0",
-		"required": false
+		"name": "limit",
+		"type": "uinteger",
+		"label": "Maximum number of records",
+		"help": "The maximum number of items to return. Default is 100.",
+		"default": 100,
+		"required": true
 	},
 	{
 		"name": "display_name",        // Makes value accesible via "{{parameters.display_name}}".

@@ -4,16 +4,26 @@
 	"method": "GET",
 	"headers": {
 		"X-Api-Key": "{{connection.apiKey}}"   // Authorizes user by API key, provided by user during the connection creation.
-		},    // Additional HTTP headers
+	},    // Additional HTTP headers
 	"qs": {
-		"page_size": "{{parameters.page_size}}",  // Parameter "page_size" that is defined in Mappable parameters.
-		"page_number": "{{parameters.page_number}}",  // Parameter "page_number" that is defined in Mappable parameters.
+		"page_size": "{{min(100, parameters.limit)}}",  // API max is 100
+		"page_number": "{{pagination.page - 1}}",  // API uses 0-indexed pages
 		"display_name": "{{parameters.display_name}}",  // Parameter "display_name" that is defined in Mappable parameters.
 		"team_name": "{{parameters.team_name}}"  // Parameter "team_name" that is defined in Mappable parameters.
 	}, // Query string
 
 	// Response handling
 	"response": {
-        "output": "{{body}}"
+		"limit": "{{parameters.limit}}",
+		"iterate": "{{body}}",
+		"output": "{{item}}"
+	},
+
+	// Pagination
+	"pagination": {
+		"qs": {
+			"page_number": "{{pagination.page - 1}}"
+		},
+		"condition": "{{length(body) > 0}}"
 	}
 }

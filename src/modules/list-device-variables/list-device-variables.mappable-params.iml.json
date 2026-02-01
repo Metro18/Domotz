@@ -12,18 +12,12 @@
 		"required": true
 	},
 	{
-		"name": "page_size",
+		"name": "limit",
 		"type": "uinteger",
-		"label": "Page Size",
-		"help": "The maximum number of items to return. Min value is 1. Max value is 1000. Default value is 100",
-		"required": false
-	},
-	{
-		"name": "page_number",
-		"type": "uinteger",
-		"label": "Page Number",
-		"help": "The requested page number, 0-indexed. Default value is 0",
-		"required": false
+		"label": "Maximum number of records",
+		"help": "The maximum number of items to return. Default is 100.",
+		"default": 100,
+		"required": true
 	},
 	{
 		"name": "value",

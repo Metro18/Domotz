@@ -2,7 +2,9 @@
 	// Request to API endpoint with parameter "id" defined in Mappable parameters.
 	"url": "/agent/{{parameters.agent_id}}/device/{{parameters.device_id}}",      // Relative to base URL
 	"method": "GET",
-	"X-Api-Key": "{{connection.apiKey}}",   // Authorizes user by API key, provided by user during the connection creation.
+	"headers": {
+		"X-Api-Key": "{{connection.apiKey}}"   // Authorizes user by API key, provided by user during the connection creation.
+	},                          // Additional HTTP headers
 	"qs": {},                               // Query string
 
 	// Response handling

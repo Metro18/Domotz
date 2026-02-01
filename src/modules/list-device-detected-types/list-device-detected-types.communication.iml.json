@@ -10,6 +10,8 @@
 
 	// Response handling
 	"response": {
-        "output": "{{body}}"
+		"limit": "{{parameters.limit}}",
+		"iterate": "{{body}}",
+		"output": "{{item}}"
 	}
 }
