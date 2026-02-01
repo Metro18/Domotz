@@ -10,7 +10,7 @@
 
 	// Response handling
 	"response": {
-		"limit": "{{parameters.limit}}",
+		"limit": "{{if(parameters.limit, parameters.limit, 100)}}",
 		"iterate": "{{body}}",
 		"output": "{{item}}"
 	}
