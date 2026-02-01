@@ -1,0 +1,12 @@
+[
+	{
+		"name": "__IMTLENGTH__",
+		"type": "uinteger",
+		"label": "Total number of bundles"
+	},
+	{
+		"name": "__IMTINDEX__",
+		"type": "uinteger",
+		"label": "Bundle order position"
+	}
+]

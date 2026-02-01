@@ -1,0 +1,13 @@
+{
+	// Universal module for making custom API calls to any Domotz endpoint
+	"url": "{{parameters.url}}",
+	"method": "{{parameters.method}}",
+	"headers": "{{if(parameters.headers, merge(headers, toCollection(parameters.headers, 'key', 'value')), headers)}}",
+	"qs": "{{if(parameters.qs, toCollection(parameters.qs, 'key', 'value'), {})}}",
+	"body": "{{if(parameters.body, parseJSON(parameters.body), omit)}}",
+
+	// Response handling
+	"response": {
+		"output": "{{body}}"
+	}
+}

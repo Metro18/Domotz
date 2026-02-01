@@ -474,6 +474,21 @@
                     "samples": "modules/get-agent-list-uptime/get-agent-list-uptime.samples.iml.json",
                     "scope": "modules/get-agent-list-uptime/get-agent-list-uptime.scope.iml.json"
                 }
+            },
+            "makeApiCall": {
+                "label": "Make an API Call",
+                "description": "Perform a custom API call to any Domotz endpoint",
+                "moduleType": "universal",
+                "connection": "connection1",
+                "altConnection": null,
+                "codeFiles": {
+                    "communication": "modules/make-api-call/make-api-call.communication.iml.json",
+                    "staticParams": "modules/make-api-call/make-api-call.static-params.iml.json",
+                    "mappableParams": "modules/make-api-call/make-api-call.mappable-params.iml.json",
+                    "interface": "modules/make-api-call/make-api-call.interface.iml.json",
+                    "samples": "modules/make-api-call/make-api-call.samples.iml.json",
+                    "scope": "modules/make-api-call/make-api-call.scope.iml.json"
+                }
             }
         },
         "function": {},
@@ -609,6 +624,10 @@
                     {
                         "local": "getAgentListUptime",
                         "remote": "getAgentListUptime"
+                    },
+                    {
+                        "local": "makeApiCall",
+                        "remote": "makeApiCall"
                     }
                 ],
                 "function": [],

@@ -7,8 +7,36 @@
 
 	// Default response handling
 	"response": {
-		"error": {                                        // Error handling
-			"message": "[{{statusCode}}] {{body.error}}"  // On error, returns error message as "[statusCode] error text".
+		"error": {
+			"400": {
+				"type": "DataError",
+				"message": "[400] Invalid request: {{body.error.message || body.error || body.message || 'Bad request'}}"
+			},
+			"401": {
+				"type": "InvalidAccessTokenError",
+				"message": "[401] Authentication failed. Please verify your API key is correct and has not expired."
+			},
+			"403": {
+				"type": "InvalidConfigurationError",
+				"message": "[403] Access denied: {{body.error.message || body.error || body.message || 'Insufficient permissions'}}"
+			},
+			"404": {
+				"type": "DataError",
+				"message": "[404] Resource not found: {{body.error.message || body.error || body.message || 'The requested resource does not exist'}}"
+			},
+			"429": {
+				"type": "RateLimitError",
+				"message": "[429] Rate limit exceeded. {{if(body.retry_after, 'Retry in ' + body.retry_after + ' seconds.', 'Please try again later.')}}"
+			},
+			"500": {
+				"type": "ConnectionError",
+				"message": "[500] Server error: {{body.error.message || body.error || body.message || 'Internal server error occurred'}}"
+			},
+			"503": {
+				"type": "ConnectionError",
+				"message": "[503] Service unavailable: {{body.error.message || body.error || body.message || 'The service is temporarily unavailable'}}"
+			},
+			"message": "[{{statusCode}}] {{body.error.message || body.error || body.message || 'An unexpected error occurred'}}"
 		}
 	},
 

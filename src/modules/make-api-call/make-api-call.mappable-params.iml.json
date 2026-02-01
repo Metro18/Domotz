@@ -1,0 +1,48 @@
+[
+	{
+		"name": "headers",
+		"label": "Headers",
+		"help": "Additional HTTP headers to include in the request. The X-Api-Key authentication header is automatically added.",
+		"type": "array",
+		"spec": [
+			{
+				"name": "key",
+				"type": "text",
+				"label": "Key",
+				"required": true
+			},
+			{
+				"name": "value",
+				"type": "text",
+				"label": "Value",
+				"required": true
+			}
+		]
+	},
+	{
+		"name": "qs",
+		"label": "Query String",
+		"help": "Query string parameters to append to the URL.",
+		"type": "array",
+		"spec": [
+			{
+				"name": "key",
+				"type": "text",
+				"label": "Key",
+				"required": true
+			},
+			{
+				"name": "value",
+				"type": "text",
+				"label": "Value",
+				"required": true
+			}
+		]
+	},
+	{
+		"name": "body",
+		"label": "Body",
+		"help": "The request body (for POST, PUT, PATCH methods). Can be JSON or other formats.",
+		"type": "text"
+	}
+]
