@@ -12,7 +12,7 @@
 	},
 	"response": {
 		"output": {
-			"count": "{{headers.\"X-Entities-Count\"}}"
+			"count": "{{headers['X-Entities-Count']}}"
 		}
 	}
 }
