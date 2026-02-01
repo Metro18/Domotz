@@ -32,7 +32,7 @@
   },
   {
     "name": "creation_time",
-    "type": "text",
+    "type": "date",
     "label": "Creation Time"
   },
   {
@@ -45,7 +45,8 @@
       },
       {
         "name": "last_change",
-        "type": "text"
+        "type": "date",
+        "label": "Last Change"
       }
     ],
     "label": "Status"
@@ -68,7 +69,8 @@
       },
       {
         "name": "activation_time",
-        "type": "text"
+        "type": "date",
+        "label": "Activation Time"
       },
       {
         "name": "type",

@@ -36,7 +36,7 @@
   },
   {
     "name": "first_seen_on",
-    "type": "text",
+    "type": "date",
     "label": "First Seen On"
   },
   {
@@ -104,7 +104,7 @@
   },
   {
     "name": "last_status_change",
-    "type": "text",
+    "type": "date",
     "label": "Last Status Change"
   },
   {
@@ -140,7 +140,10 @@
       },
       {
         "name": "udp",
-        "type": "array"
+        "type": "array",
+        "spec": {
+          "type": "number"
+        }
       }
     ],
     "label": "Open Ports"
@@ -173,15 +176,5 @@
     "name": "is_jammed",
     "type": "boolean",
     "label": "Is Jammed"
-  },
-  {
-    "name": "__IMTLENGTH__",
-    "type": "number",
-    "label": "  IMTLENGTH  "
-  },
-  {
-    "name": "__IMTINDEX__",
-    "type": "number",
-    "label": "  IMTINDEX  "
   }
 ]

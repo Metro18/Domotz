@@ -27,7 +27,7 @@
   },
   {
     "name": "first_seen_on",
-    "type": "text",
+    "type": "date",
     "label": "First Seen On"
   },
   {
@@ -95,7 +95,7 @@
   },
   {
     "name": "last_status_change",
-    "type": "text",
+    "type": "date",
     "label": "Last Status Change"
   },
   {
