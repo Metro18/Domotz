@@ -2,9 +2,6 @@
 	// Request to API endpoint to re-enable all disabled Custom Drivers.
 	"url": "/custom-driver/association/re-enable",      // Relative to base URL
 	"method": "POST",
-	"headers": {
-		"X-Api-Key": "{{connection.apiKey}}"   // Authorizes user by API key, provided by user during the connection creation.
-	},    // Additional HTTP headers
 	"qs": {
 		"include_unrecoverable": "{{parameters.include_unrecoverable}}"  // Parameter "include_unrecoverable" that is defined in Mappable parameters.
 	}, // Query string

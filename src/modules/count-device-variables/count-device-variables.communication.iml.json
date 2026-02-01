@@ -1,9 +1,6 @@
 {
 	"url": "/agent/{{parameters.agent_id}}/device/{{parameters.device_id}}/variable",
 	"method": "HEAD",
-	"headers": {
-		"X-Api-Key": "{{connection.apiKey}}"
-	},
 	"qs": {
 		"value": "{{parameters.value}}",
 		"path": "{{parameters.path}}",

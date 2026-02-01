@@ -2,9 +2,6 @@
 	// Request to API endpoint with parameter "id" defined in Mappable parameters.
 	"url": "/agent",      // Relative to base URL
 	"method": "GET",
-	"headers": {
-		"X-Api-Key": "{{connection.apiKey}}"   // Authorizes user by API key, provided by user during the connection creation.
-	},    // Additional HTTP headers
 	"qs": {
 		"page_size": "{{min(100, parameters.limit)}}",  // API max is 100
 		"page_number": "{{pagination.page - 1}}",  // API uses 0-indexed pages
@@ -14,7 +11,7 @@
 
 	// Response handling
 	"response": {
-		"limit": "{{if(parameters.limit, parameters.limit, 100)}}",
+		"limit": "{{parameters.limit}}",
 		"iterate": "{{body}}",
 		"output": "{{item}}"
 	},

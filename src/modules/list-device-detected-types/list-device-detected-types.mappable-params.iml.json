@@ -4,6 +4,7 @@
 		"type": "uinteger",
 		"label": "Maximum number of records",
 		"help": "The maximum number of items to return. Default is 100.",
-		"required": false
+		"default": 100,
+		"required": true
 	}
 ]

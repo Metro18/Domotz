@@ -2,16 +2,13 @@
 	// Request to API endpoint.
 	"url": "/custom-driver", // Relative to base URL
 	"method": "GET",
-	"headers": {
-		"X-Api-Key": "{{connection.apiKey}}"   // Authorizes user by API key, provided by user during the connection creation.
-	},                         // Additional HTTP headers
 	"qs": {                                // Query string
 		"show_hidden": "{{parameters.show_hidden}}"  // Parameter "show_hidden" that is defined in Mappable parameters.
 	},
 
 	// Response handling
 	"response": {
-		"limit": "{{if(parameters.limit, parameters.limit, 100)}}",
+		"limit": "{{parameters.limit}}",
 		"iterate": "{{body}}",
 		"output": "{{item}}"
 	}

@@ -2,9 +2,6 @@
 	// Request to API endpoint to count collectors.
 	"url": "/agent",      // Relative to base URL
 	"method": "HEAD",
-	"headers": {
-		"X-Api-Key": "{{connection.apiKey}}"   // Authorizes user by API key, provided by user during the connection creation.
-	},    // Additional HTTP headers
 	"qs": {
 		"display_name": "{{parameters.display_name}}",  // Parameter "display_name" that is defined in Mappable parameters.
 		"team_name": "{{parameters.team_name}}"  // Parameter "team_name" that is defined in Mappable parameters.

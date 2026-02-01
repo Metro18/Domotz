@@ -2,9 +2,6 @@
 	// Request to API endpoint with parameter "id" defined in Mappable parameters.
 	"url": "/user",      // Relative to base URL
 	"method": "GET",
-	"headers": {
-		"X-Api-Key": "{{connection.apiKey}}"   // Authorizes user by API key, provided by user during the connection creation.
-	},                         // Additional HTTP headers
 	"qs": {},                               // Query string
 
 	// Response handling

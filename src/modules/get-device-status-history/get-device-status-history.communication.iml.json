@@ -1,9 +1,6 @@
 {
 	"url": "/agent/{{parameters.agent_id}}/device/{{parameters.device_id}}/history/network/event",
 	"method": "GET",
-	"headers": {
-		"X-Api-Key": "{{connection.apiKey}}"
-	},
 	"qs": {
 		"from": "{{parameters.from}}",
 		"to": "{{parameters.to}}"

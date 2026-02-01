@@ -2,9 +2,6 @@
 	// Request to API endpoint.
 	"url": "/agent/{{parameters.agent_id}}/device", // Relative to base URL
 	"method": "GET",
-	"headers": {
-		"X-Api-Key": "{{connection.apiKey}}"   // Authorizes user by API key, provided by user during the connection creation.
-	},                         // Additional HTTP headers
 	"qs": {                                // Query string
 		"show_hidden": "{{parameters.show_hidden}}"  // Parameter "show_hidden" that is defined in static parameters.
 	},
